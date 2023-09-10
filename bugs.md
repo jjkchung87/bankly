@@ -1,0 +1,6 @@
+- BUG #1. "register" route did not verify JSON schema
+- BUG #2. "authUser" middleware should be .verify() instead of .decode(); test not added
+- BUG #3. "getAll" not returning only basic info
+- BUG #4. PATCH route doesn't restrict users from updating only first_name, last_name, email, phone. 
+- BUG #5 . PATCH route required user to be admin, when it should allow for either admin OR if logged in user is updating their own profile
+- 
